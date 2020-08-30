@@ -75,7 +75,7 @@
 
         </div>
 
-        <div class="mobile-popover noselect">
+        <div class="mobile-popover noselect" id="mobileSharePopover">
 
           <div class="icons-container">
             <span>share</span>
@@ -115,6 +115,8 @@
   // const html = document.getElementsByTagName('html')[0];
   const shareButton = document.getElementById('shareButton');
   const sharePopover = document.getElementById('sharePopover');
+  const mobileShareButton = document.getElementById('mobileShareButton');
+  const mobileSharePopover = document.getElementById('mobileSharePopover');
 
   /*html.addEventListener('click', function(e) {
     if (e.target !== sharePopover) {
@@ -122,8 +124,16 @@
     }
   });*/
 
-  shareButton.addEventListener('click', function (e) {
-    sharePopover.classList.toggle('active')
+  shareButton.addEventListener('click', function () {
+    if (screen.width <= 550) {
+      mobileSharePopover.classList.toggle('active');
+    } else {
+      sharePopover.classList.toggle('active')
+    }
+  });
+
+  mobileShareButton.addEventListener('click', function () {
+    mobileSharePopover.classList.remove('active');
   });
 
 </script>

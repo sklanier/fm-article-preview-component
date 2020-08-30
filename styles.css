@@ -202,8 +202,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, 0);
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (landscape tablets, 840px and up) */
+@media only screen and (max-width: 840px) {
     .card {
         flex-flow: column;
         padding: 1rem;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 550px and up) */
 @media only screen and (max-width: 550px) {
     .card {
         padding: 0;
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
         left: 0;
         bottom: 0;
         right: 0;
-        height: 65px;
+        height: 80px;
         padding: 0 1.5rem;
         background-color: hsl(217, 19%, 35%);
         display: none;
