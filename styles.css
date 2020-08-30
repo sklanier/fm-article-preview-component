@@ -40,18 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .left {
     flex: 0 0 325px;
-    border: none;
 }
 
 .left img {
     width: 100%;
     height: 100%;
-    border: none;
 }
 
 .right {
     flex: 1;
-    padding: 1rem 1.5rem;
+    padding: 2rem 3rem;
 }
 
 .attribution {
