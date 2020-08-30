@@ -11,6 +11,10 @@ html {
     color: hsl(217, 19%, 35%);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 .content {
     width: 100%;
     height: 100%;
@@ -19,6 +23,10 @@ html {
     align-items: center;
 }
 
+/**
+ * Help to set divs inline, with flexbox container and one child with fixed widtch:
+ * https://stackoverflow.com/questions/29885284/how-to-set-a-fixed-width-column-with-css-flexbox
+ */
 .card {
     background: #ffffff;
     border-radius: 8px;
@@ -31,7 +39,7 @@ html {
 }
 
 .left {
-    width: 600px;
+    flex: 0 0 325px;
     border: none;
 }
 
@@ -42,6 +50,7 @@ html {
 }
 
 .right {
+    flex: 1;
     padding: 1rem 1.5rem;
 }
 
