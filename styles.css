@@ -121,10 +121,6 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.mobile-popover {
-    display: none;
-}
-
 /**
  * Center an absolute div
  * https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element
@@ -271,19 +267,23 @@ h1, h2, h3, h4, h5, h6 {
         height: 65px;
         padding: 0 1.5rem;
         background-color: hsl(217, 19%, 35%);
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: space-between;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
 
-    .share {
+    .mobile-popover.active {
+        display: flex;
+    }
+
+    .mobile-popover.active .share {
         background-color: hsl(214, 17%, 51%);
         color: hsl(210, 46%, 95%);
     }
 
-    .share img {
+    .mobile-popover.active .share img {
         filter: brightness(0) invert(1);
     }
 }
