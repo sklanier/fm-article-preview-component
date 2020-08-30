@@ -8,6 +8,7 @@ html {
     background-color: hsl(210, 46%, 95%);
     overflow: hidden;
     font-family: 'Manrope', sans-serif;
+    color: hsl(217, 19%, 35%);
 }
 
 .content {
