@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .right .container {
     padding: 2rem 4rem 2rem 3rem;
+    position: relative;
 }
 
 .right .container p {
@@ -120,6 +121,10 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.mobile-popover {
+    display: none;
+}
+
 /**
  * Center an absolute div
  * https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element
@@ -156,7 +161,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
-.popover span {
+.popover span,
+.mobile-popover span {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: hsl(214, 17%, 51%);
@@ -168,22 +174,27 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.icons-container a {
+.icons-container a,
+.mobile-popover a {
     text-decoration: none;
     border: none;
     height: 20px;
     width: 20px;
 }
 
-.icons-container a:hover {
+.icons-container a:hover,
+.mobile-popover a:hover {
     text-decoration: none;
 }
 
-.icons-container a:not(:last-child) {
+.icons-container a:not(:last-child),
+.mobile-popover a:not(:last-child) {
     margin-right: 1rem;
 }
 
-.icons-container a img {
+.icons-container a img,
+.mobile-popover a img
+{
     width: 20px;
     height: 20px;
 }
@@ -241,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     .right .container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .right .container p {
@@ -249,5 +261,29 @@ h1, h2, h3, h4, h5, h6 {
 
     .attribution {
         display: none;
+    }
+
+    .mobile-popover {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 65px;
+        padding: 0 1.5rem;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .share {
+        background-color: hsl(214, 17%, 51%);
+        color: hsl(210, 46%, 95%);
+    }
+
+    .share img {
+        filter: brightness(0) invert(1);
     }
 }
