@@ -83,6 +83,17 @@ h1, h2, h3, h4, h5, h6 {
     color: hsl(212, 23%, 69%);
 }
 
+.share {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .attribution {
     position: fixed;
     bottom: 0;
