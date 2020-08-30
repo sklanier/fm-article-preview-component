@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #ffffff;
     border-radius: 8px;
     width: 900px;
-    height: 300px;
+    /*height: 300px;*/
     overflow: hidden;
     display: flex;
     flex-flow: row;
@@ -49,7 +49,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .right {
     flex: 1;
+}
+
+.right .container {
     padding: 2rem 4rem 2rem 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.author-container img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.author {
+    margin-left: 1rem;
+}
+
+.author span{
+    display: block;
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
 }
 
 .attribution {
