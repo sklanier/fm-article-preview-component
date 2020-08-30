@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6 {
     align-items: stretch;
 }
 
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .left {
     flex: 0 0 325px;
 }
@@ -67,10 +72,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 4rem 2rem 3rem;
 }
 
+.right .container p {
+    font-size: 13px;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .author-container {
@@ -215,6 +225,10 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 2rem;
     }
 
+    .card-title {
+        font-size: 16px;
+    }
+
     .left {
         flex: 0;
     }
@@ -227,6 +241,10 @@ h1, h2, h3, h4, h5, h6 {
     .right .container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .right .container p {
+        margin-bottom: 1.5rem;
     }
 
     .attribution {
