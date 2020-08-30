@@ -50,10 +50,10 @@
           </div>
 
           <div class="share-container">
-            <div class="share">
+            <div class="share noselect" id="shareButton">
               <img src="./images/icon-share.svg" alt="share">
             </div>
-            <div class="popover">
+            <div class="popover noselect" id="sharePopover">
 
               <span>share</span>
 
@@ -85,5 +85,23 @@
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   Coded by <a href="#">Your Name Here</a>.
 </div>
+
+<script>
+
+  // const html = document.getElementsByTagName('html')[0];
+  const shareButton = document.getElementById('shareButton');
+  const sharePopover = document.getElementById('sharePopover');
+
+  /*html.addEventListener('click', function(e) {
+    if (e.target !== sharePopover) {
+      sharePopover.classList.remove('active');
+    }
+  });*/
+
+  shareButton.addEventListener('click', function (e) {
+    sharePopover.classList.toggle('active')
+  });
+
+</script>
 </body>
 </html>
