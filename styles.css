@@ -117,6 +117,32 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: hsl(214, 17%, 51%);
+    margin-right: 1rem;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+}
+
+.icons-container a {
+    text-decoration: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+
+.icons-container a:hover {
+    text-decoration: none;
+}
+
+.icons-container a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.icons-container a img {
+    width: 20px;
+    height: 20px;
 }
 
 .attribution {
